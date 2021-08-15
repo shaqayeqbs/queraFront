@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>quera.ir</title>
+    <link rel="stylesheet" href="css/quera.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div><a href="#"><img class="logo" src="images/profile.png" alt="left-profile"></a></div>
+            <div><a href="#"><img class="bell" src="images/notif.png" alt="bell"></a></div>
+
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="#">مگنت(استخدام)</a></li>
+                        <li><a href="#">مسابقات</a></li>
+                        <li><a href="#">بانک سوالات</a></li>
+                        <li><a href="#">کالج</a></li>
+                        <li><a href="#">سامانه آموزشی</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div><a href="#"><img class="logq" src="images/logo-quera.svg" alt=""></a></div>
+
+            <!--<img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="openNavigation">-->
+        </div>
+    </div>
+<div class="all">
+
+    <div class="left-side">
+        <aside class="cv-aside">
+            <img class="cv-photo" src="images/aside-cv.svg" alt="cv">
+            <p class="percent">۱۰٪</p>
+            <p class="text">
+                رزمه تخصصی خود را کامل کنید
+                و مهارت و تجربه خود را به
+                برترین <span> شرکت های فعال</span> در حوزه
+                IT نشان دهید.
+                <br>
+              
+            <p class="text">معرفی رزمه ساز کوئرا</p>
+            </p>
+            <a href="#" class="join-for-cv">ورود به رزمه ساز</a>
+
+
+        </aside>
+        <aside class="last-blog">
+            <div class="h2-last-blog">آخرین مطالب بلاگ</div>
+            <div class="competition-blog">
+                <a href="#">مسابفه تابستان چلنج پارادو</a>
+
+                <br>
+                <div class="tarikh">۲۰ تیر ۱۴۰۰ ساعت ۲۲:۲۳</div>
+            </div>
+            <div class="competition-blog">
+                <a href="#">مسابقه Quera Connect تحلیل داده – فوتبالیست‌ها</a>
+                <div class="tarikh">۱۹ اردیبهشت ۱۴۰۰ ساعت ۱۷:۳۳</div>
+            </div>
+        </aside>
+        <aside class="last-job">
+            <div class="h2-last-job">آخرین فرصت های شغلی</div>
+            <div class="container">
+                <a href="#">توسعه‌دهنده ReactJS</a>
+                <div class="tarikh">پلازیو</div>
+                <div class="c1">
+                    <a href="#">Back-end Software Engineer - Golang
+                    </a>
+                    <div class="tarikh">تجارت بین الملل رابین</div>
+                </div>
+                <div class="c1">
+                    <a href="#">Blockchain Developer</a>
+                    <div class="tarikh">تجارت بین الملل رابین</div>
+                </div>
+                <div class="c1">
+                    <a href="#">برنامه‌نویس فرانت‌اند Front-end</a>
+                    <div class="tarikh" >فناپ</div>
+                </div>
+                <div class="see-all">مشاهده همه</div>
+            </div>
+        </aside>
+    </div>
+    <div class="right-side">
+        <div class="up">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="images/slidebar1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/slidebar2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/slidebar3.jpg" style="width:100%">
+
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+        </script>
+        </div>
+        <div class="down">
+            <div class="tamrin-konid">
+                <div class="head-of-left">
+                    <div class="first">همه سؤالات</div>
+                    <div class="second">تمرین کنید <img src="images/caribean.png"></div>
+                </div>
+                <div class="tamrin">
+                    <p class="phara">تعداد سؤال حل‌شده</p>
+                    <ul>
+                        
+                        <li style="color:orange">۰ <br><a href="#">المپیاد</a></li>
+                        <li style="color:rgb(5, 172, 5)">۰ <br><a href="#">دانشگاهی</a></li>
+                        <li style="color:red">۱۴ <br><a href="#">مسابقه</a></li>
+                        <li style="color:orange">۰ <br><a href="#">تکنولوژی</a></li>
+                        
+                    </ul>
+                    <p class="phara"> سؤالات پیشنهادی</p>
+                    <table class="table">
+                        <tr>
+                            <td>۱۲۹۰حل </td>
+                            <td>آسان</td>
+                            <td   style="padding-right: 3em;"> <div class="blue-text fflex" >
+                                 لکنت
+                               </div></td>
+                            
+                        </tr>
+                        <tr>
+                            <td> ۳۶۹ حل</td>
+                            <td>متوسط</td>
+                            <td style="padding-right: 3em;"><div class="blue-text">همکاری پر دردسر</div></td>
+                            
+                        </tr>
+                        <tr>
+                            <td> ۵ حل </td>
+                            <td>سخت </td>
+                            <td style="padding-right: 3em;"<div class="blue-text">Base Stations</div></td>
+                        </tr>
+                    </table>
+                </div>
+            
+            </div>
+            <div class="akharin-soton">
+                <div class="akharin-class-haye-man">
+                    <div class="for-flex">
+                        <div class="all-class">همه کلاس‌ها</div>
+                        <div class="last-class">آخرین کلاس‌های من <img src="images/university-50.png"></div>
+                    </div>
+                    <div class="table-class">
+                    <table >
+                        <tr>
+                            <td> <div class="detail">۴۴ عضو<br>بهار ۰۰-۹۹</td>
+                            <td> <div class="detail2"> آخرین تمرین: <div><a href="#">پروژه</a></div></td>
+                            <td><a href="#"><div class="shekar">آزمایشگاه مدارمنطقی ومعماری کامپیوتر</div></a>
+                                <div class="tarikh" >استاد کشاورز</div></td>
+                        </tr>
+                        <tr>
+                            <td> <div class="detail">۵۸ عضو<br>بهار ۰۰-۹۹</td>
+                            <td> <div class="detail2"> آخرین تمرین:<div> <a href="#">امتحان نهایی</div></a></td>
+                            <td class=""> <a href="#"><div class="shekar">نظريه زبان ها و ماشين ها</div></a><div class="tarikh">دكتر سيد محمد حسين شكريان</div></td>
+        
+                        </tr>
+        
+                        
+        
+                        <tr>
+                            <td> <div class="detail">۷۰ عضو<br>بهار ۰۰-۹۹</td>
+                            <td> <div class="detail2">آخرین تمرین: <div><a href="#">تمرین سوم</a></div></td>
+                            <td ><a href="#"><div class="shekar">کامپایلر</div></a><div class="tarikh">استاد فرید فیضی</div></td>
+                        </tr>
+        
+                    </table></div>
+                    <div class="last-maharat">
+                    <div class="for-flexi">
+                    <div class="all-maharat">همه مسابقات</div>
+                    <div class="last-all-maharat">مهارت خود را بسنجید <img src="images/cup-48.png"></div></div>
+                    <table class="table-maharat">
+                       <div class="my-div"> <tr >
+                            <td > <div class="tarikh"> ۲۵ تیر ۱۴۰۰</div></td>
+                            <td><a href="#"><div class="shekarp">مسابقه الگوریتمی تابستون چلنج (پادرو)</div></a></td>
+                            
+                        </tr>
+                        <tr >
+                            <td > <div class="tarikh">۱ مرداد ۱۴۰۰</div></td>
+                            <td><a href="#"><div class="shekarp">Quera Connect - Golang (پیام‌رسان بله)</div></a></td>
+                            
+                        </tr>
+                        </div>
+                    </table>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+
+
+
+        </div>
+    </div>
+</div>
+
+<div class="footer-div">
+    <div class="first">
+        <div class="images">
+        <img class="parspak" src="/images/parspack-vert.0-8d35cad5f532.png" alt="pars">
+        <img src="/images/logo.png" alt="etemad">
+        <img src="/images/samandehi.png" alt="">
+        </div>
+        <div class="icons">
+            <img class="ln pad" src="/images/5282542_linkedin_network_social network_linkedin logo_icon.svg
+            " alt="linkedin">
+            <img class="insta pad" src="/images/1161953_instagram_icon.svg">
+            <img class="bird pad" src="/images/174528_bird_flying_media_social_tweet_icon.svg">
+            <img class="tel pad"  src="/images/tele.svg" alt="">
+            <img  class="bird pad" src="/images/2916248_github_marketing_media_social_website_icon.svg" alt="">
+
+        </div>
+        <div class="text">ساخته‌شده با افتخار در ایران | ۱۳۹۴ - ۱۴۰۰</div>
+    </div>
+    <div class="second">
+        <div class="with-quera">
+            با کوئرا
+        </div>
+            <div class="text">همکاری با ما</div>
+            <div class="text">تماس با ما</div>
+                <div class="text">درباره ما</div>
+                    <div class="text">قوانین و مقررات</div>
+                        <div class="text">حمایت از مسابقات</div>
+
+        
+    </div>
+    <div class="second">
+        <div class="with-quera">
+            رویداد‌ها
+        </div>
+            <div class="text">
+                هکاتون کدآپ</div>
+            <div class="text">کد کاپ</div>
+                <div class="text">تریس ومعماری</div>
+                    <div class="text">کارآموزشو</div>
+                        <div class="text">Career Days</div>
+    </div>
+    <div class="second">
+        <div class="with-quera">
+            منابع
+        </div>
+            <div class="text">
+                کوئرامگ توسعه‌دهندگان</div>
+                <div class="text">کوئرامگ شرکت‌ها</div> 
+                <div class="text"> اخبار مسابقات و دوره‌ها</div>
+                    <div class="text"> ماشین‌حساب حقوق برنامه‌نویسان</div>
+                        <div class="text"> آمار‌های دنیای برنامه‌نویسی</div>
+                            <div class="text"> عضویت در خبرنامه</div>
+    </div>
+    <div class="second">
+        <div class="with-quera">
+           محصولات
+        </div>
+            <div class="text">
+                آموزش برنامه‌نویسی</div>
+                <div class="text"> آگهی‌های استخدام</div>
+                    <div class="text"> سؤالات برنامه‌نویسی</div>
+                        <div class="text">مسابقات</div>
+                            <div class="text">کلاس‌ها</div>
+                                <div class="text"> پلتفرم استخدامی</div>
+    </div>
+    <div class="second sixth">
+        <img src="/images/lasat.svg" alt="">
+    </div>
+</div>
+</body>
